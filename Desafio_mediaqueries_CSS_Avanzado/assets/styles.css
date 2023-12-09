@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #e9fce1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+menu {
+  grid-area: menu;
+}
+
+main {
+  grid-area: seccion-principal;
+  background-color: #e9fce1;
+  gap: 20px;
+}
+
+footer {
+  grid-area: pie-pagina;
+}
+
+.grid-container {
+  display: grid;
+  min-width: 100dvw;
+  grid-template-rows: 1fr 10 fr 1fr ;
+  grid-template-areas:
+    "menu"
+    "seccion-principal"
+    "pie-pagina";
+}
+
+/* Inicio Menu */
+menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9fce1;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.logo {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.categorias {
+  display: none;
+}
+/* Fin Menu */
+
+/* Inicio Filtro de Busqueda */
+main nav {
+  background-color: rgb(207, 238, 153);
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav p {
+  margin: 10px;
+}
+/* Fin Filtro de Busqueda */
+
+/* Inicio Sección principal */
+.gallery {
+  display: grid;
+  min-width: auto;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #e9fce1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card2 {
+    display: none;
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px;
+  padding: 20px;
+}
+
+button {
+  background-color: #b1f295;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: #b1f295;
+}
+
+button:hover {
+  background-color: #e9fce1;
+  color: darkgreen;
+}
+
+button:focus {
+  background-color: rgb(207, 231, 211);
+}
+
+.img1 {
+  grid-area: a;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/te-verde.jpeg);
+}
+
+.img2 {
+  grid-area: b;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/manzanilla.jpeg);
+}
+
+.img3 {
+  grid-area: c;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/te-floresjamaica.jpeg);
+}
+
+.img4 {
+  grid-area: d;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/taza1.jpeg);
+}
+
+.img5 {
+  grid-area: e;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/taza2.jpeg);
+}
+
+.img6 {
+  grid-area: f;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/taza3.jpeg);
+}
+
+.img7 {
+  grid-area: g;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/cobre.jpeg);
+}
+
+.img8 {
+  grid-area: h;
+  height: 200px;
+  width: auto;
+  background-image: url(../assets/img/set.jpeg);
+}
+
+/* Inicio Pie de página */
+footer {
+  background-color: rgb(1, 45, 1);
+  color: white;
+  text-align: center;
+  font-family: cursive;
+  padding: 20px;
+}
+/* Fin Pie de página */
+
+/* Inicio Desktop */
+@media (min-width: 576px) {
+  .grid-container {
+    width: auto;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-areas:
+      "menu seccion-principal"
+      "menu seccion-principal"
+      "menu pie-pagina";
+    grid-template-columns: 0.5fr 3fr;
+    gap: 10px;
+    
+  }
+
+  /* Inicio Menu */
+  .icono {
+    display: none;
+  }
+
+  menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: end;
+  }
+
+  menu p {
+    color: gray;
+  }
+
+  menu h3 {
+    justify-content: left;
+  }
+
+  .categorias {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  /* Fin Menu */
+
+  .gallery {
+    display: grid;
+    min-width: auto;
+    gap: 20px;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+  .card1 {
+    display: none;
+  }
+
+
+  
+}
