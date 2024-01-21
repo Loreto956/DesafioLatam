@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <div class="container">
+        <select id="password1">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>    
+
+        <select id="password2">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select> 
+        
+        <select id="password3">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>  
+        
+      
+    </div>
+
+    <div class="btn-container">
+        <button id="bntIngresar" class="boton" 
+        onclick="
+            let password1 = document.querySelector('#password1').value;
+            let password2 = document.querySelector('#password2').value;
+            let password3 = document.querySelector('#password3').value;
+
+            let result = document.querySelector('#result')
+
+    if(password1 === '9' && password2 === '1' && password3 === '1'){
+        result.textContent = 'El password 1 es correcto'
+        result.style.color = 'black';
+    } 
+    else if (password1 === '7' && password2 === '1' && password3 === '4'){
+        result.textContent = 'El password 2 es correcto'
+        result.style.color = 'black';
+    } else{
+        result.textContent = 'El password es incorrecto'
+        result.style.color = 'red';
+    }
+    "
+            >Ingresar</button>
+        <p id="result"></p>
+    </div> 
+</body>
+</html>

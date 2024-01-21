@@ -1,0 +1,54 @@
+* {
+    margin: 0
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* Ejercicio1 */
+
+#borde {
+    border: 2px solid white;
+}
+
+/* Ejercicio2 */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.cantidad {
+    text-align: center; 
+    margin-right: 20px; 
+}
+
+img {
+    height: 350px;
+    width: 350px;
+}
+
+input {
+    margin-top: 10px; 
+}
+
+.btn-container {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.boton {
+    margin-top: 20px; 
+    background-color: deepskyblue;
+    border-radius: 20px;
+}
+
+p{
+    align-items: center;
+    text-align: center; 
+    margin-top: 20px;
+}
