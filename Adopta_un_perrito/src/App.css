@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.my-card {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.textCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
