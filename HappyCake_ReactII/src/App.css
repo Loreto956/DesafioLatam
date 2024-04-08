@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tienda {
+  justify-content: end;
+}
+
+.contenido {
+  justify-content: center;
+  margin: 150px;
+}
+
+footer {
+  background-color: rgb(230, 77, 77);
+  margin: 20px;
+  padding: 10px;
+  color: white
+}
