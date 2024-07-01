@@ -1,0 +1,12 @@
+# .gitignore
+# Ignorar los archivos y directorios node_modules
+node_modules/
+# Ignorar los archivos y directorios de entorno
+backend/.env
+# Ignorar el archivo de configuración de Vite
+frontend/vite.config.js
+# Ignorar archivos de compilación
+dist/
+build/
+# Ignorar los archivos de log
+*.log
